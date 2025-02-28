@@ -3,6 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rifles</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novritsch</title>
     <style>
         * {
@@ -127,18 +135,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .navbar3 {
     display: flex;
     align-items: center;
@@ -149,7 +145,7 @@
     font-weight: bold;
     color: black; 
     font-size: 12px;
-    text-decoration: none; 
+    text-decoration: none  ; 
     position: relative;
     transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
 }
@@ -213,15 +209,6 @@
             opacity: 1;
         }
 
-        .fullscreen-video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover;
-            z-index: -1;
-        }
 
         .footer {
             background-color: white;
@@ -232,6 +219,15 @@
             bottom: 0;
             width: 100%;
             margin-top: auto;
+        }
+        .rifle{
+            display:flex;
+            align-items: center;
+            justify-content: space-around;
+            width:300px;
+            height:250px;
+            padding: 10px 50px;
+            position: relative;
         }
     </style>
 </head>
@@ -258,8 +254,9 @@
         </nav>
     </header>
     <header class="header2">
+     
         <nav class="navbar2">
-            <a href="./Purchase/rifles.html">Rifles</a>
+            <a href="./Purchase/rifles.html" >Rifles</a>
             <a href="./Purchase/pistols.html">Pistols</a>
             <a href="./Purchase/ammo.html">Ammo</a>
             <a href="./Purchase/accesories.html">Accesories</a>
@@ -275,16 +272,15 @@
         </nav>
     </header>
 
-
-    <video class="fullscreen-video" autoplay muted loop>
-        <source src="./We Are Novritsch.mov" type="video/mp4">
-        
-        
-    </video>
+    <img class="rifle" src="https://eu.novritsch.com/wp-content/uploads/2021/04/A1-7-scaled-600x600.jpg"/>    
+   
+    <img class="rifle"src="https://eu.novritsch.com/wp-content/uploads/2021/04/A2-3-scaled-600x600.jpg"/>
 
     <footer class="footer">
-        <p>&copy; 2025 Novritsch | All Rights Reserved</p>
+        <p>&copy; 2025 Novritsch | Toate drepturile rezervate</p>
     </footer>
 
+</body>
+</html>
 </body>
 </html>

@@ -6,6 +6,302 @@
     <title>Search</title>
 </head>
 <body>
-    
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novritsch</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .header2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 50px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        .logo-container:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-container img {
+            width: 150px;
+            height: 30px;
+        }
+
+        .forplayers {
+            font-weight: bold;
+            color: black;
+            opacity: 60%;
+            padding-left: 15px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .navbar a {
+            font-weight: bold;
+            color: black;
+            opacity: 60%;
+            font-size: 12px;
+            transition: font-size 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            opacity: 100%;
+            font-size: 14px;
+        }
+
+        .navbar2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar2 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar2 a {
+    font-weight: bold;
+    color: black; 
+    font-size: 12px;
+    text-decoration: none; 
+    position: relative;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar2 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: black; 
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar2 a:hover {
+    font-size: 14px;
+    color: black; 
+}
+
+.navbar2 a:hover::after {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar3 a {
+    font-weight: bold;
+    color: black; 
+    font-size: 12px;
+    text-decoration: none; 
+    position: relative;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar3 a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 2px;
+    background-color: black; 
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar3 a:hover {
+    font-size: 14px;
+    color: black; 
+}
+
+.navbar3 a:hover::after {
+    width: 100%;
+}
+
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 200px;
+            background-color: white;
+            color: black;
+            text-align: center;
+            border-radius: 6px;
+            padding: 10px;
+            position: absolute;
+            z-index: 1;
+            top: 150%;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #555 transparent;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .fullscreen-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .footer {
+            background-color: white;
+            color: black;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: auto;
+        }
+        iframe {
+            width: 100%;
+            height: 90vh; 
+            border: none;
+            margin-top: 10px;
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <a href="./Atestat.html" class="logo-container">
+            <img src="https://eu.novritsch.com/wp-content/uploads/2021/05/novEU-1.png" alt="Novritsch Logo">
+            <p class="forplayers">For Players, By Players <br> From Austria, Shipping Worldwide</p>
+        </a>
+
+        <nav class="navbar">
+            <a href="./Navbar/Academy.html">Academy</a>
+            <a href="./Navbar/Support.html">Support</a>
+            <a href="./Navbar/Search.html">Location</a>
+            <div class="tooltip">
+                <a href="Navbar/register.html">Log in/ Register</a>
+                <div class="tooltiptext">
+                    <input type="email" placeholder="email">
+                    <input type="password" placeholder="password">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <header class="header2">
+        <nav class="navbar2">
+            <a href="./Purchase/rifles.html">Rifles</a>
+            <a href="./Purchase/pistols.html">Pistols</a>
+            <a href="./Purchase/ammo.html">Ammo</a>
+            <a href="./Purchase/accesories.html">Accesories</a>
+            <a href="./Purchase/gear.html">Gear & Apparel</a>
+            <a href="./Purchase/more.html">More</a>
+        </nav>
+
+        <nav class="navbar3">
+            <a href="./Purchase/Bundles.html">Bundles & Sets</a>
+            <a href="./Purchase/sale.html">Sale</a>
+            <a href="./Purchase/arrivals.html">New Arrivals</a>
+            <a href="./Purchase/startairsoft.html">Start Airsoft</a>
+        </nav>
+    </header>
+
+
+    <video class="fullscreen-video" autoplay muted loop>
+        <source src="./We Are Novritsch.mov" type="video/mp4">
+        
+        
+    </video>
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d147145.8514514756!2d16.23924660296048!3d48.04303902667136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07cef9bd61b9%3A0xbe2f204d2218a7b!2sNovritsch%20Trading%20GmbH%20-%20Office!5e1!3m2!1sro!2sro!4v1741357917039!5m2!1sro!2sro" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <footer class="footer">
+        <p>&copy; 2025 Novritsch | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
 </body>
 </html>
